@@ -1,3 +1,5 @@
+package Tracks;
+
 public abstract class MusicComposition {
 
     protected String title;
