@@ -1,4 +1,4 @@
-package Tracks;
+package Music_Composition.Tracks;
 
 public abstract class MusicComposition {
 
@@ -14,12 +14,20 @@ public abstract class MusicComposition {
         this.genre = genre;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getArtist() {
+        return artist;
+    }
+
     public int getDuration() {
-        return this.durationInSeconds;
+        return durationInSeconds;
     }
 
     public String getGenre() {
-        return this.genre;
+        return genre;
     }
 
     public abstract String getFullInfo();

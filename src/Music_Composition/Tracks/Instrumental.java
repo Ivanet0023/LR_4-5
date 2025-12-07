@@ -1,4 +1,4 @@
-package Tracks;
+package Music_Composition.Tracks;
 
 public class Instrumental extends MusicComposition {
 
@@ -14,7 +14,7 @@ public class Instrumental extends MusicComposition {
     @Override
     public String getFullInfo() {
         return "Song{" +
-                ", instrumentalProducer='" + instrumentalProducer + '\'' +
+                "instrumentalProducer='" + instrumentalProducer + '\'' +
                 ", title='" + title + '\'' +
                 ", artist='" + artist + '\'' +
                 ", durationInSeconds=" + durationInSeconds +

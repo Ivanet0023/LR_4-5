@@ -1,19 +1,23 @@
-package Tracks;
+package Music_Composition.Tracks;
 
-public class Vokal extends MusicComposition {
+public class Song extends MusicComposition {
 
     private String lyricsAuthor;
-    public Vokal(String title, String artist, int durationInSeconds, String genre,
-                 String lyricsAuthor) {
+    private String instrumentalProducer;
+
+    public Song(String title, String artist, int durationInSeconds, String genre,
+                String lyricsAuthor, String instrumentalProducer) {
 
         super(title, artist, durationInSeconds, genre);
         this.lyricsAuthor = lyricsAuthor;
+        this.instrumentalProducer = instrumentalProducer;
     }
 
     @Override
     public String getFullInfo() {
-        return "Vokal{" +
+        return "Song{" +
                 "lyricsAuthor='" + lyricsAuthor + '\'' +
+                ", instrumentalProducer='" + instrumentalProducer + '\'' +
                 ", title='" + title + '\'' +
                 ", artist='" + artist + '\'' +
                 ", durationInSeconds=" + durationInSeconds +
