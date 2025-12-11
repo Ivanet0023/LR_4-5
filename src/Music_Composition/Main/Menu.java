@@ -20,7 +20,7 @@ public class Menu {
         menuCommands.put(3, new CalculateDurationCommand(disk));
         menuCommands.put(4, new SortByGenreCommand(disk));
         menuCommands.put(5, new FindInRangeCommand(disk));
-        menuCommands.put(6, new LoadFromFileCommand(disk)); // Завантаження
+        menuCommands.put(6, new LoadFromFileCommand(disk));
         menuCommands.put(7, new HelpCommand());
     }
 
