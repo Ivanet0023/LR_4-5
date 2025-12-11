@@ -14,7 +14,6 @@ public class ShowTracksCommand implements Command {
 
     @Override
     public void execute() {
-        System.out.println("\nSelect the album");
         List<MusicComposition> tracks = disk.getTracks();
 
         if (tracks.isEmpty()) {
