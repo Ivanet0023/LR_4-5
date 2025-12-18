@@ -44,6 +44,7 @@ class LoadFromFileCommandTest {
                 "Vokal;Tom's Diner;Suzanne;129;Acapella;Suzanne\n";
         createTestFile(content);
 
+
         LoadFromFileCommand command = new LoadFromFileCommand(disk);
         command.execute();
 

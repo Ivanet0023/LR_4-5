@@ -11,12 +11,12 @@
 
         <SMTP name="MailLogger"
               subject="CRITICAL ERROR: MusicDisk App"
-              to="ivannamber31@gmail.com"
+              to=""
               from="music_disk_bot@gmail.com"
               smtpHost="smtp.gmail.com"
               smtpPort="465"
               smtpProtocol="smtps"
-              smtpUsername="ivannamber31@gmail.com"
+              smtpUsername=""
               smtpPassword=""
               smtpDebug="false"
               bufferSize="1">
