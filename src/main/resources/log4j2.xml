@@ -17,7 +17,7 @@
               smtpPort="465"
               smtpProtocol="smtps"
               smtpUsername="ivannamber31@gmail.com"
-              smtpPassword="wpxm suwz sehp woiu"
+              smtpPassword=""
               smtpDebug="false"
               bufferSize="1">
         </SMTP>
