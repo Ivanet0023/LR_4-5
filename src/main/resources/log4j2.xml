@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <File name="FileLogger" fileName="app.log" append="true">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+        <SMTP name="MailLogger"
+              subject="CRITICAL ERROR: MusicDisk App"
+              to="ivannamber31@gmail.com"
+              from="music_disk_bot@gmail.com"
+              smtpHost="smtp.gmail.com"
+              smtpPort="465"
+              smtpProtocol="smtps"
+              smtpUsername="ivannamber31@gmail.com"
+              smtpPassword="wpxm suwz sehp woiu"
+              smtpDebug="false"
+              bufferSize="1">
+        </SMTP>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="MailLogger" level="error"/>
+        </Root>
+    </Loggers>
+</Configuration>
